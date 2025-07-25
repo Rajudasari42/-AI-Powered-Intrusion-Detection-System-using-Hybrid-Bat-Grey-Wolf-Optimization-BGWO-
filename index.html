@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI-Powered Intrusion Detection</title>
+</head>
+<body>
+    <h1>AI-Powered Intrusion Detection</h1>
+    <form method="POST" action="/predict">
+        {% for i in range(41) %}
+            <label for="feature{{ i }}">Feature {{ i }}:</label>
+            <input type="text" name="feature{{ i }}" required><br><br>
+        {% endfor %}
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
